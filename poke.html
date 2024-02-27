@@ -21,14 +21,59 @@
             </div>
         </nav>
     </header>
+    <dialog id="box">
+        <div id="flex-me" class="card">
+            <div>
+                <img class="card-img-top" id="poke-img" alt="...">
+                <p class="card-title" id="poke-name"></p>
+                <p class="card-text" id="poke-type"></p>
+                <button id="back-btn" class="btn btn-primary">Back</button>
+            </div>
+            <div id="poke-stats">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HP</td>
+                            <td id="poke-hp"></td>
+                        </tr>
+                        <tr>
+                            <td>ATTACK</td>
+                            <td id="poke-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>DEFENSE</td>
+                            <td id="poke-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>SPECIAL-ATTACK</td>
+                            <td id="poke-sp-attack"></td>
+                        </tr>
+                        <tr>
+                            <td>SPECIAL-DEFENSE</td>
+                            <td id="poke-sp-defense"></td>
+                        </tr>
+                        <tr>
+                            <td>SPEED</td>
+                            <td id="poke-speed"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </dialog>
     <main class="container-fluid" id="main">
-
     </main>
     
-    <script src="poke.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="poke.js"></script>
 </body>
 
 </html>
