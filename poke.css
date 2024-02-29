@@ -18,13 +18,12 @@ main{
     background-color: rgb(5, 6, 6);
     height: 100%;
     display: flex;
-    
     flex-wrap: wrap;
     position: relative;
     top:56px;
 }
 .img{
-    border-radius: 10px;
+    /* border-radius: 10px;
     border: 1px solid rgb(68, 124, 159);
     margin: 5px;
     padding: 5px;
@@ -33,6 +32,8 @@ main{
     color: white;
     text-shadow: 1px 1px rgb(49, 131, 185);
     flex-grow: 1;
+     */
+     transform: scale(5);
 }
 .hidden{
     display: none;
@@ -46,11 +47,13 @@ main{
     background-color: rgb(112, 235, 139);
 }
 #box{
+    text-align: center;
     border-radius: 10px;
     transform: scale(1.7);
     background: linear-gradient(to bottom,#e13c3c,rgb(239, 243, 236), #95f1ea);
 }
 #poke-img-output{
+    padding: 20px;
     margin-top: 60px;
     transform: scale(1.8);
 }
@@ -61,34 +64,12 @@ main{
     display: flex;
     flex-direction: row;
 }
-#poke-stats{
-    /* border: 1px solid red; */
-    /* width: 400px; */
-    /* padding: 0 10px; */
-}
+
 td{
     background-color: rgba(193, 75, 236, 0.79);
     outline: 2px solid white;
     padding: 9px;
 }
-/* .hp td{
-    background-color: grey;
-}
-.attack{
-    background-color: rgba(243, 75, 75, 0.856);
-}
-.defense{
-    background-color: rgba(69, 210, 69, 0.769);
-}
-.sp-attack{
-    background-color: rgba(255, 0, 0, 0.685);
-}
-.sp-defense{
-    background-color: rgba(69, 210, 69, 0.989);
-}
-.speed{
-    background-color: rgb(70, 231, 229);
-} */
 dialog::backdrop {
     backdrop-filter: blur(5px);
 }

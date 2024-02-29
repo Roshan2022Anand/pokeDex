@@ -15,6 +15,7 @@ const pokeSpDefense = document.getElementById("poke-sp-defense");
 const pokeSpeed = document.getElementById("poke-speed");
 //function to search pokemon from the search bar value
 const searchPokemon = async (myName) => {
+    console.log('working')
     if (myName == "")
         alert("are you mad ?");
     else {
@@ -34,7 +35,7 @@ const searchPokemon = async (myName) => {
             console.log(data);
         } catch (err) {
             console.log(err)
-            // alert("please enter a valid name");
+            alert("please enter a valid name");
         }
     }
 }
@@ -43,9 +44,6 @@ srchBtn.addEventListener("click", () => { searchPokemon(search.value) });
 backBtn.addEventListener("click", () => {
     box.close();
 })
-// const clickMe=(name)=>{
-//     searchPokemon(name);
-// }
 //function to display few pokemon
 const displayPokemon = (data) => {
     // console.log(data);
